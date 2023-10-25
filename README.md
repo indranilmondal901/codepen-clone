@@ -2,7 +2,9 @@
 ![image](https://github.com/indranilmondal901/codepen-clone/assets/122368872/d1d85810-e126-4137-80b0-d31f2c80a767)
 
 test app with below inputs-->
+
 [[HTML]]
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +19,9 @@ test app with below inputs-->
 </body>
 </html>
 
+
 [[CSS]]
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -38,7 +42,9 @@ button:hover {
 }
 
 
+
 [[JS]]
+
 document.getElementById('changeColor').addEventListener('click', function() {
   document.body.style.backgroundColor = getRandomColor();
 });
