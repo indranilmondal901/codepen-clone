@@ -1,3 +1,67 @@
+
+![image](https://github.com/indranilmondal901/codepen-clone/assets/122368872/d1d85810-e126-4137-80b0-d31f2c80a767)
+
+test app with below inputs-->
+
+[[HTML]]
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodePen Test</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button id="changeColor">Change Color</button>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+[[CSS]]
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+[[JS]]
+
+document.getElementById('changeColor').addEventListener('click', function() {
+  document.body.style.backgroundColor = getRandomColor();
+});
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
