@@ -13,8 +13,9 @@ const Header = () => {
   return (
       <Container position='static'>
         <Toolbar>
-          logo
-          {/* <img src={require("./logo-company.png")} style={{height: "10vh"}} /> */}
+          {/* logo */}
+          <img src={require("./codeEditor-logo.png")} alt="Indra's code editor" style={{height: "8vh" , margin:"5px 0px 5px 0px" , borderRadius: "10px"}} />
+          {/* Welcome To Indra's Code Editor */}
         </Toolbar>
       </Container>
   )
